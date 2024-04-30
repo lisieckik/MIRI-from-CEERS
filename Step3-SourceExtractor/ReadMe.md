@@ -18,3 +18,11 @@ Let's modify the config file:
 - line 42, change 0.0 to 25.70091, this is for scaling, each observation has its own zeropoint
 - line 45, change 1.0 to 0, our file has size information
 
+All the other lines are also important, but you will learn how to use them as you will get experience with source extractor.
+## Default.param
+It is worth to add two lines to this file:
+- ALPHA_J2000
+- DELTA_J2000
+
+## SExMIRI.py
+In this code I show you how to call source extractor using python. It can be easily automitized using loops.
