@@ -49,9 +49,9 @@ def reproject_fits(input_fits_filename, hdu_index1, reference_fits_file, hdu_ind
 
 # Input files
 # Path to the MIRI image file
-Miripath = "/home/lisieckik/Pulpit/Darko galaxie/v2/MiriCatalogs/miri1/hlsp_ceers_jwst_miri_miri1_f770w_dr0.6_i2d.fits"
+Miripath = "hlsp_ceers_jwst_miri_miri1_f770w_dr0.6_i2d.fits"
 # Path to the HST image file
-HSTpath = '/home/lisieckik/Pulpit/Darko galaxie/v2/HST/egs_all_wfc3_ir_f160w_030mas_v1.9_drz.fits'
+HSTpath = 'egs_all_wfc3_ir_f160w_030mas_v1.9_drz.fits'
 
 
 reproject_fits(HSTpath,

@@ -6,6 +6,7 @@ Following, to be able to reproduce this example you gonna need:
 - Python 3.x (I suppose it should work with any version above 3.8, I use 3.10) with following packages:
     - Numpy, Matplotlib, Astropy
     - [Reproject](https://pypi.org/project/reproject/), since JWST MIRI has different pixel size than HST
+    - [Photoutils](https://photutils.readthedocs.io/en/stable/), great tool for data reduction
     - Subprocess (I think it is default with python), it helps with automatization
 - [SourceExtractor](https://sextractor.readthedocs.io/en/latest/Installing.html)
 - Not necessary:
