@@ -29,6 +29,8 @@ def make_RMS_bg(big_image, rms_output_name, SCI_bks_name, dx = 50, dy = 50):
     # Building the background file using the usual photoutils function
     # If you want to know the details check the documentation
     # In short, it cutouts every peak (source) in the data and building the background over the rest of pixels
+    # The size of dx and dy should be big enought to cover extended sources
+    # Filter smoothes the result background
     zerr = Background2D(data,
                         (dx, dy),
                         sigma_clip=clip,
