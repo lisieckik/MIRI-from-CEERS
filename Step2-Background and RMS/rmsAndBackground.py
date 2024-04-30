@@ -17,14 +17,14 @@ def make_RMS_bg(big_image, rms_output_name, SCI_bks_name, dx = 50, dy = 50):
     """
     # Opening the file
     hdu = fits.open(big_image)
-    # Reading the data. We use hdul index 2 because if you check in the CEERS readme file
+    # Reading the data. We use hdul index 1 because if you check in the CEERS readme file
     # it refers to image before background substraction
-    data = hdu[2].data
+    data = hdu[1].data
 
     # Coverage mask deletes the pixels without data from rms estimation
     coverage_mask = data==0
     # Reading header
-    header = hdu[2].header
+    header = hdu[1].header
 
     # Building the background file using the usual photoutils function
     # If you want to know the details check the documentation

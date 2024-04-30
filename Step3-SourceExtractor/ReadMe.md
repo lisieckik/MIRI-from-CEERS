@@ -12,17 +12,21 @@ All of them can be downloaded [here](https://github.com/astromatic/sextractor/tr
 
 ## Default.sex
 Let's modify the config file:
+- line 8, change from FITS_LDAC to FITS_1.0
+- line 15m change from 2 to 10, it will help you not detecting artifacts
 - line 16 (17), change 1.5 (2) to 1.1 (1.1), it will allow you to detect fainter sources
 - line 20, change from gauss_4.0_7x7.conv to default.conv, we are going to use the default file
 - line 31, change from NONE to NONE, MAP_RMS, as we are using double image mode, we need to specify two files, but we dont care about errors of the HST detection image, so we wont give it
 - line 42, change 0.0 to 25.70091, this is for scaling, each observation has its own zeropoint
 - line 45, change 1.0 to 0, our file has size information
+- line 49, change from 1.2 to 0.5, our data is high-quality
 
 All the other lines are also important, but you will learn how to use them as you will get experience with source extractor.
 ## Default.param
-It is worth to add two lines to this file:
-- ALPHA_J2000
-- DELTA_J2000
+It is worth to add three lines to this file:
+- ALPHA_J2000     (This is rectascension)
+- DELTA_J2000     (This is declination)
+- MAGERR_AUTO     (This is the error)
 
 ## SExMIRI.py
 In this code I show you how to call source extractor using python. It can be easily automitized using loops.
