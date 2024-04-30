@@ -30,3 +30,6 @@ It is worth to add three lines to this file:
 
 ## SExMIRI.py
 In this code I show you how to call source extractor using python. It can be easily automitized using loops.
+
+# You did it!
+You now have extracted photometry. The first task to check if it was worth is to compare it to the Yang catalog. Let me know if you need some help with that (you gonna need to change from magnitudes to Jansky)!
